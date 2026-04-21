@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FITFUEL - Fuel Your Fitness with premium workout sessions, stretching routines, and high-quality fitness products.">
+    <title>FITFUEL - Fuel Your Fitness</title>
+    <!-- Google Fonts: Inter and Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">FIT<span>FUEL</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#levels">Levels</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>FUEL YOUR <span class="gold-text">FITNESS</span></h1>
+            <p>Your ultimate destination for workout sessions, stretching routines, and premium fitness gear. Start your journey to a stronger you today.</p>
+            <div class="hero-buttons">
+                <a href="#training" class="btn btn-primary">Start Training</a>
+                <a href="#shop" class="btn btn-secondary">Shop Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Training Sessions Section -->
+    <section id="training" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title">Training <span class="gold-text">Sessions</span></h2>
+            
+            <div class="tabs">
+                <button class="tab-btn active" onclick="openTab(event, 'stamina')">Stamina Training</button>
+                <button class="tab-btn" onclick="openTab(event, 'stretching')">Stretching Session</button>
+            </div>
+
+            <!-- Stamina Tab -->
+            <div id="stamina" class="tab-content active">
+                <p class="tab-desc">Build your cardiovascular endurance and boost your raw power with our high-intensity stamina sessions.</p>
+                <div class="card-grid">
+                    <div class="exercise-card">
+                        <div class="exercise-icon">⚡</div>
+                        <h3>Jumping Jacks</h3>
+                        <p>Full-body cardio that elevates heart rate and warms up muscles quickly.</p>
+                        <span class="difficulty begin">Beginner</span>
+                    </div>
+                    <div class="exercise-card">
+                        <div class="exercise-icon">🔥</div>
+                        <h3>Burpees</h3>
+                        <p>Explosive lower and upper body workout for maximum calorie burn.</p>
+                        <span class="difficulty adv">Advanced</span>
+                    </div>
+                    <div class="exercise-card">
+                        <div class="exercise-icon">⛰️</div>
+                        <h3>Mountain Climbers</h3>
+                        <p>Core-crushing plank variation that keeps your heart rate soaring.</p>
+                        <span class="difficulty inter">Intermediate</span>
+                    </div>
+                    <div class="exercise-card">
+                        <div class="exercise-icon">🏃</div>
+                        <h3>High Knees</h3>
+                        <p>Intense running-in-place drill to improve leg power and speed.</p>
+                        <span class="difficulty inter">Intermediate</span>
+                    </div>
+                    <div class="exercise-card">
+                        <div class="exercise-icon">👟</div>
+                        <h3>Running Drills</h3>
+                        <p>Sprint intervals designed to significantly boost lung capacity.</p>
+                        <span class="difficulty adv">Advanced</span>
+                    </div>
+                    <div class="exercise-card">
+                        <div class="exercise-icon">〰️</div>
+                        <h3>Skipping Rope</h3>
+                        <p>Classic stamina builder for agility, coordination, and endurance.</p>
+                        <span class="difficulty begin">Beginner</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stretching Tab -->
+            <div id="stretching" class="tab-content" style="display: none;">
+                <p class="tab-desc">Enhance your flexibility, reduce injury risk, and promote muscle recovery with guided stretching.</p>
+                <div class="card-grid">
+                    <div class="exercise-card">
+                        <div class="exercise-icon">🧘</div>
+                        <h3>Neck Stretch</h3>
+                        <p>Relieve tension built up in the upper spine and cervical muscles.</p>
+                    </div>
+                    <div class="exercise-card">
+                        <div class="exercise-icon">🤸</div>
+                        <h3>Shoulder Stretch</h3>
+                        <p>Cross-body arm pulls to open up tight deltoids and scapula.</p>
+                    </div>
+                    <div class="exercise-card">
+                        <div class="exercise-icon">💪</div>
+                        <h3>Arm Stretch</h3>
+                        <p>Overhead tricep and bicep extensions for upper limb recovery.</p>
+                    </div>
+                    <div class="exercise-card">
+                        <div class="exercise-icon">🦵</div>
+                        <h3>Hamstring Stretch</h3>
+                        <p>Seated or standing toe touches to lengthen the back of legs.</p>
+                    </div>
+                    <div class="exercise-card">
+                        <div class="exercise-icon">🦶</div>
+                        <h3>Quad Stretch</h3>
+                        <p>Standing heel-to-glute pulls to release front thigh tightness.</p>
+                    </div>
+                    <div class="exercise-card">
+                        <div class="exercise-icon">🧍</div>
+                        <h3>Calf Stretch</h3>
+                        <p>Wall pushes to release lower leg stiffness after cardio runs.</p>
+                    </div>
+                    <div class="exercise-card">
+                        <div class="exercise-icon">🌟</div>
+                        <h3>Full-Body Stretch</h3>
+                        <p>Comprehensive flow (like downward dog to cobra) for full alignment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise Levels Section -->
+    <section id="levels" class="section black-bg">
+        <div class="container">
+            <h2 class="section-title">Exercise <span class="gold-text">Levels</span></h2>
+            <div class="level-container">
+                
+                <div class="level-column beginner-col">
+                    <div class="level-header">
+                        <h3>Beginner</h3>
+                        <p>Start your foundation</p>
+                    </div>
+                    <div class="level-workouts">
+                        <div class="workout-item">
+                            <h4>Bodyweight Squats</h4>
+                            <p>Builds leg strength and mobility.</p>
+                            <div class="workout-meta">🕒 3x10 Reps | 🟢 Low</div>
+                        </div>
+                        <div class="workout-item">
+                            <h4>Knee Push-ups</h4>
+                            <p>Develop chest and triceps base.</p>
+                            <div class="workout-meta">🕒 3x8 Reps | 🟢 Low</div>
+                        </div>
+                        <div class="workout-item">
+                            <h4>Plank Hold</h4>
+                            <p>Core stabilization.</p>
+                            <div class="workout-meta">🕒 3x20 Secs | 🟢 Low</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="level-column intermediate-col">
+                    <div class="level-header">
+                        <h3>Intermediate</h3>
+                        <p>Push your limits further</p>
+                    </div>
+                    <div class="level-workouts">
+                        <div class="workout-item">
+                            <h4>Jump Squats</h4>
+                            <p>Explosive leg power generation.</p>
+                            <div class="workout-meta">🕒 4x12 Reps | 🟡 Med</div>
+                        </div>
+                        <div class="workout-item">
+                            <h4>Standard Push-ups</h4>
+                            <p>Full upper body resistance.</p>
+                            <div class="workout-meta">🕒 4x15 Reps | 🟡 Med</div>
+                        </div>
+                        <div class="workout-item">
+                            <h4>Bicycle Crunches</h4>
+                            <p>Dynamic core and obliques.</p>
+                            <div class="workout-meta">🕒 3x30 Reps | 🟡 Med</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="level-column advanced-col">
+                    <div class="level-header">
+                        <h3>Advanced</h3>
+                        <p>Master your physique</p>
+                    </div>
+                    <div class="level-workouts">
+                        <div class="workout-item">
+                            <h4>Pistol Squats</h4>
+                            <p>Unilateral balance and extreme strength.</p>
+                            <div class="workout-meta">🕒 3x8/Leg | 🔴 High</div>
+                        </div>
+                        <div class="workout-item">
+                            <h4>Diamond Push-ups</h4>
+                            <p>Intense tricep and inner chest activation.</p>
+                            <div class="workout-meta">🕒 4x20 Reps | 🔴 High</div>
+                        </div>
+                        <div class="workout-item">
+                            <h4>Dragon Flags</h4>
+                            <p>Ultimate aesthetic core shredding.</p>
+                            <div class="workout-meta">🕒 3x10 Reps | 🔴 High</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title">Premium <span class="gold-text">Gear</span></h2>
+            <p class="section-subtitle">Equip yourself with FITFUEL exclusive merchandise.</p>
+            
+            <div class="shop-grid">
+                
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <!-- We will use the provided directory images -->
+                        <img src="images/shaker.jpeg" alt="FITFUEL Shaker" onerror="this.src='https://via.placeholder.com/300x300/1e1e1e/d4af37?text=FITFUEL+Shaker'">
+                        <div class="overlay-buy">
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>FITFUEL Shaker</h3>
+                        <span class="price">₹ 499</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="images/performance-shoe.jpeg" alt="Performance Shoes" onerror="this.src='https://via.placeholder.com/300x300/1e1e1e/d4af37?text=FITFUEL+Shoes'">
+                        <div class="overlay-buy">
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Performance Shoes</h3>
+                        <span class="price">₹ 6,499</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="images/yoga-mat.jpeg" alt="Premium Yoga Mat" onerror="this.src='https://via.placeholder.com/300x300/1e1e1e/d4af37?text=Premium+Yoga+Mat'">
+                        <div class="overlay-buy">
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Yoga Mat</h3>
+                        <span class="price">₹ 1,799</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="images/dumbbell-set.jpeg" alt="Dumbbell Set (5-25kg)" onerror="this.src='https://via.placeholder.com/300x300/1e1e1e/d4af37?text=Dumbbell+Set'">
+                        <div class="overlay-buy">
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Dumbbell Set (5-25kg)</h3>
+                        <span class="price">₹ 8,499</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="img-wrapper">
+                        <img src="images/whey-protein.jpeg" alt="100% Whey Protein" onerror="this.src='https://via.placeholder.com/300x300/1e1e1e/d4af37?text=Whey+Protein'">
+                        <div class="overlay-buy">
+                            <button class="buy-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>100% Whey Protein</h3>
+                        <span class="price">₹ 4,699</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">FIT<span>FUEL</span></div>
+                <p>Fuel Your Fitness journey with unparalleled training routines and premium gear.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#training">Training</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#">IG</a>
+                    <a href="#">FB</a>
+                    <a href="#">X</a>
+                    <a href="#">YT</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FITFUEL. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
